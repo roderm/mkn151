@@ -1,0 +1,25 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.shadow{
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+	  background-color: rgba(0,0,0,0.7);
+    display: block;
+    vertical-align: middle;
+    z-index: 1000;
+}
+.dialog{
+    width: 500px;
+    height: 200px;
+    margin: 100px auto;
+    background-color: #9DC9A9;
+    padding: 20px;
+}
+
+.right{
+	float: right;
+}

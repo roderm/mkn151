@@ -1,0 +1,79 @@
+*{
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+button{
+	width: 80px;
+	height: 30px;
+	border-radius: 5px;
+}
+button:hover{
+	cursor: pointer;
+}
+button.green{
+	background-color: #6DCD6D;
+	border-color:#000000;
+}
+button.red {
+	background-color: #FF6A6A;
+	border-color:#000000;
+}
+
+label{
+	display: inline-block;
+	width: 150px;
+	height: 100%;
+	vertical-align: top;
+}
+
+input{
+	display: inline-block;
+}
+.hidden{
+	height: 0px;
+	visibility: hidden;
+	display: none;
+	width: 0px;
+}
+.loading{
+	width: 100%;
+	height: 50px;
+	position: relative;
+	display: inline-block;
+	padding-right: 100px;
+	padding-left: 50px;
+}
+.loadingIcon{
+	width: 50px;
+	height: 50px;
+	background-color: blue;
+	border-radius: 1;
+	-webkit-animation: loading 5s;
+	-webkit-animation-iteration-count: infinite;
+	animation: loading 5s;
+}
+@-webkit-keyframes loading {
+    0%{
+    	background-color: #3A01DF;
+    }
+    40%{
+    	background-color: #FF0080;
+    	width: 100%;
+    	margin-left: 0px;
+    }
+    60%{
+    	background-color: #DF7401;
+    	margin-left: 100%;
+    	width: 50px;
+    	height: 50px;
+    	-webkit-transform: rotate(0deg);
+    	border-radius: 0px;
+    }
+    90%{
+    	-webkit-transform: rotate(230deg);
+    
+    }
+    100%{
+    	-webkit-transform: rotate(180deg);
+    
+    }
+}

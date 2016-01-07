@@ -1,0 +1,181 @@
+/* 
+    Document   : main
+    Created on : 24.06.2014, 13:45:02
+    Author     : Roman
+    Description:
+        Purpose of the stylesheet follows.
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+root { 
+    display: block;
+}
+body {
+   /* background-image: url(../media/background_lights.jpg);*/
+   background-color: black;
+   overflow-x: scoll;
+}
+.label_container{
+	display: inline-block;
+	height: 100%;
+	vertical-align: top;
+}
+.admin_content{
+	width: 100%;	
+}
+.header{
+	border: 3px solid black;
+	padding: 10px;
+	height: 30px;
+}
+.AdminTable{
+	border: 2px solid black;
+	 border-collapse: collapse;
+	 width: 100%;
+}
+.AdminTable tr {
+	border: 1px solid black;
+}
+.AdminTable td {
+	border: 1px solid grey;
+}
+.ContentTitle{
+    height: 100%;
+    width: 50px;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+}
+.ContentBlock{
+	height: 100%;
+	width: auto;
+	display: inline-block;
+}
+.ContentTools{
+	height: 200px;
+	display: inline-block;
+	background-color: ;
+}
+.rotatet_div{
+    -ms-transform:rotate(270deg);
+    -webkit-transform:rotate(270deg);
+    transform: rotate(270deg);
+    height: 50px;
+}
+.content-block{
+	width: 1000px;
+	position: relative;
+	display: inline-block;
+	height: 100%;
+	overflow-y: scroll;
+}
+.content-block::-webkit-scrollbar-thumb{
+background-color:#B03C3F;
+border-radius:10px;
+}
+.content-block::-webkit-scrollbar-thumb:hover{
+background-color:#BF4649;
+border:1px solid #333333;
+}
+.content-block::-webkit-scrollbar-thumb:active{
+background-color:#A6393D;
+border:1px solid #333333;
+} 
+
+.Kategorien{
+    background-color: #A30052;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+.Kategorien .mod1{
+	background-color: #B53375;
+}
+.Kategorien .mod2{
+	background-color: #CB709E;
+}
+.header .mod1{
+	background-color: #A0A0A0 !important;
+}
+.header .mod2{
+	background-color: #C8C8C8 !important;
+}
+table.Kategorien .clickable:hover{
+	background-color: #E0A9C5 !important;
+	cursor: pointer;
+}
+table.Questions .clickable:hover{
+	background-color: #66A3FF !important;
+	cursor: pointer;
+}
+table.Highscore .clickable:hover{
+	background-color: #FF9966 !important;
+	cursor: pointer;
+}
+.Questions{
+    background-color: #0066FF;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+.Questions .mod1{
+	background-color: #4791FF;
+}
+.Questions .mod2{
+	background-color: #3366FF;
+}
+.Highscore{
+    background-color: #009999;
+}
+.Highscore .mod1{
+    background-color: #5CBDBD;
+}
+.Highscore .mod1{
+    background-color: #9DD7D7;
+}
+.Tools{
+    background-color: #338533;
+}
+.dialog{
+    width: 500px;
+    height: 200px;
+    margin: auto auto;
+    background-color: #9DC9A9;
+    opacity: 1;
+}
+div.form button{
+	margin: 10px 15px 20px 10px;
+}
+div.adminText{
+	margin: 10px;
+}
+div.adminText input{
+	width: 600px;
+}
+div.adminText textarea{
+	width: 600px;
+	height: 100px;
+}
+div.ContentTitle img{
+	margin: 5px;
+}
+#Question_DropdownBtn{
+	background-color: #A4C8FF;
+	height: 20px;
+	border: 2px solid black;
+}
+#Question_DropDown{
+	display: inline-block;
+	width: 500px;
+}
+#QuestionDropdown{
+	position: fixed;
+	width: 500px;
+}
+#BtnLogout{
+  float: right;
+}
+#BtnLogout:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}

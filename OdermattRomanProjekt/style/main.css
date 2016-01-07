@@ -1,0 +1,130 @@
+/* 
+    Document   : main
+    Created on : 24.06.2014, 13:45:02
+    Author     : Roman
+    Description:
+        Purpose of the stylesheet follows.
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+root { 
+    display: block;
+}
+body {
+    background-image: url(../media/blue_and_purple_lights_seamless_texture.jpg);
+    margin: 0;
+    padding: 1%;
+}
+#game-content{
+	position: relative;
+	display: inline-block;
+	width: 40%;
+	height: 97%;
+	background-color: rgba(0,0,0, 0.9);
+	overflow-y: scroll;
+}
+#game-content::-webkit-scrollbar { 
+    display: none; 
+}
+#score-content{
+	position: relative;
+	display: inline-block;
+	width: 40%;
+	height: 97%;
+	background-color: rgba(0,0,0, 0.9);
+	overflow: hidden;
+}
+.game-li{
+	display: block;
+	border-radius: 20px;
+	margin: 20px;
+	position: relative;
+	height: 50px;
+	text-align: center;
+	color: white;
+	text-shadow: 3px #663300;
+}
+.game-button{
+	border: #009999 solid 10px;
+	background-color: #999966;
+	cursor: pointer;
+}
+.game-titel{
+	border: #990033 solid 10px;
+	background-color: #FF6600;
+}
+.game-half{
+	display: block;
+	width: 40%;
+	float: left;
+}
+.load-circle{
+	margin: auto;
+	width: 1000px;
+	height: 1000px;
+	border-radius: 750px;
+	background-color: rgba(0,0,0,0);
+	border: 60px solid red;
+	-webkit-animation: load 2s;
+	-webkit-animation-iteration-count: infinite;
+	animation: load 2s;
+}
+.info{
+	width: 500px;
+	height: 500px;
+	position: fixed;
+}
+.disabled{
+	background-color: #999999;
+	cursor: default;
+}
+@-webkit-keyframes load {
+	
+	0%{
+		width: 0px;
+		height: 0px;
+		border: 5px solid red;
+		margin-top: 49%;
+		margin-left: 49%;
+	}
+	100%{
+		width: 1500px;
+		height: 1500px;
+		border: 60px solid red;
+		margin-top: -250px;
+		margin-left: -250px;
+	}
+}
+#infoPanel{
+	background-color: white;
+	margine-left: 30px;
+	margine-right: 30px;
+	padding: 10px;
+}
+#BtnLogout{
+  float: right;
+}
+#BtnLogout:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#TopTenScores{
+  margin-top: 30px;
+  overflow-y; scroll;
+}
+#TableHighscore{
+  background-color: #FF9966; 
+  width: 100%;
+}
+.Highscore.mod1{
+  background-color: #CC6600; 
+}
+.Highscore.mod2{
+  background-color: #E0A366; 
+}
+.Highscore.self{
+  backgorund-color: #FFCC00;
+}
